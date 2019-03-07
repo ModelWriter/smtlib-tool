@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/eu.modelwriter.smtlib.texteditor.feature_1.0.0.201903070340.jar" id="eu.modelwriter.smtlib.texteditor.feature" version="1.0.0.201903070340">
+      <category name="smtlibeditor"/>
+   </feature>
+   <category-def name="smtlibeditor" label="SMTLIB Editor for Eclipse">
+      <description>
+         Provide Syntax Highlighting, Gets Models, Cores, and Proofs ...
+      </description>
+   </category-def>
+</site>
