@@ -5,27 +5,11 @@
  */
 package eu.modelwriter.smtlib.texteditor;
 
-import org.eclipse.core.runtime.CoreException;
-import org.eclipse.jface.text.IDocument;
-import org.eclipse.jface.text.IDocumentPartitioner;
-import org.eclipse.jface.text.rules.FastPartitioner;
-import org.eclipse.ui.editors.text.FileDocumentProvider;
+import org.eclipse.ui.editors.text.TextFileDocumentProvider;
 
 /** This class is a DocumentProvider, connecting a document partitioner with 
  * the argument to createDocument*/
-public class SMTDocumentProvider extends FileDocumentProvider {
+public class SMTDocumentProvider extends TextFileDocumentProvider {
 
-	@Override
-	protected IDocument createDocument(Object element) throws CoreException {
-		IDocument document = super.createDocument(element);
-		if (document != null) {
-			IDocumentPartitioner partitioner =
-				new FastPartitioner(
-					new SMTPartitionScanner(),
-					SMTPartitionScanner.tokenNames); // No default listed here
-			partitioner.connect(document);
-			document.setDocumentPartitioner(partitioner);
-		}
-		return document;
-	}
+
 }
