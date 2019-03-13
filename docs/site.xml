@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/eu.modelwriter.smtlib.texteditor.feature_1.0.0.201903070340.jar" id="eu.modelwriter.smtlib.texteditor.feature" version="1.0.0.201903070340">
+   <feature url="features/eu.modelwriter.smtlib.texteditor.feature_1.0.0.201903140022.jar" id="eu.modelwriter.smtlib.texteditor.feature" version="1.0.0.201903140022">
       <category name="smtlibeditor"/>
    </feature>
    <category-def name="smtlibeditor" label="SMTLIB Editor for Eclipse">
